@@ -7,7 +7,10 @@ def render(text, emojis)
   emoji_index_cycle = (0...emojis.size).cycle
 
   char_maps = text.split('')
-    .map { |char| downcase_short_char_map(char) }.compact # get the map for each letter
+    .map { |char|
+      downcase_char_map(char)
+      # char_map(char)
+    }.compact # get the map for each letter
     .map { |cm| cm.join("\n").gsub(/[^ \n]/, emoji_index_cycle.next.to_s).split("\n") } # 'o' -> (0..N)
 
   asciiart = concat_letters_with_kerning(char_maps).join("\n")
@@ -41,7 +44,7 @@ def concat_letters_with_kerning(letters)
 
     trim_amount = memo.map { |item|
       item[:lc] + item[:rc]
-    }.min - 1 # always leave at least 1 space
+    }.min - 2 # always leave at least 1 space
     # trim_amount = 0
 
     # puts '-' * 15
