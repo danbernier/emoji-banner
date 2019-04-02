@@ -52,7 +52,6 @@ And you get:
 
 * Extract character maps into...something more manageable.
 * Add more fonts?
-* Make it run on ruby 2.3.7.
 * Add some minitests, for sanity's sake.
 
 # Contributors

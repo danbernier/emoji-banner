@@ -60,8 +60,10 @@ def concat_letters_with_kerning(letters)
       left_trim_amt = [[trim_amount, item[:lc]].min, 0].max
       right_trim_amt = [trim_amount - left_trim_amt, 0].max
 
-      item[:left].delete_suffix!(' ' * left_trim_amt)
-      item[:left] << item[:right].delete_prefix(' ' * right_trim_amt)
+      item[:left].slice!(item[:left].size - left_trim_amt) if item[:left].end_with? ' ' * left_trim_amt
+      right_bit = item[:right]
+      right_bit.slice!(0...right_trim_amt) if right_bit.start_with? ' ' * right_trim_amt
+      item[:left] << right_bit
     end
   end
 
