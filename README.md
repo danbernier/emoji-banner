@@ -56,5 +56,5 @@ And you get:
 
 # Contributors
 
-* @tara-ted: typography
+* @taralynnconnelly: typography
 * @danbernier: ruby hacking
