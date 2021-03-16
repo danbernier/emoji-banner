@@ -2,6 +2,8 @@
 
 Turns text into ascii-art, but then turns the ascii-art into emoji. All you really need is a `:transparent:` custom emoji, for the spacing to work.
 
+[Read more about this project](https://designischoice.com/projects/emoji-banners/).
+
 # Usage
 
     ruby play.rb hi
