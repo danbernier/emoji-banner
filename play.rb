@@ -234,8 +234,8 @@ def downcase_short_char_map(char)
 
     'o' => [
       '   ',
-      '   ',
       'ooo',
+      'o o',
       'o o',
       'ooo',
       '   ',
@@ -324,11 +324,11 @@ def downcase_short_char_map(char)
 
     'x' => [
       '   ',
-      '   ',
+      'o o',
       'o o',
       ' o ',
       'o o',
-      '   ',
+      'o o',
       '   '
     ],
 
@@ -380,6 +380,17 @@ def downcase_char_map(char)
       '',
     ],
 
+    '\'' => [
+      ' ',
+      'o',
+      'o',
+      ' ',
+      ' ',
+      ' ',
+      ' ',
+      ' ',
+    ],
+
     '!' => [
       ' o ',
       ' o ',
@@ -392,7 +403,7 @@ def downcase_char_map(char)
 
     'a' => [
       '   ',
-      'ooo',
+      'oo ',
       '  o',
       'ooo',
       'o o',
@@ -436,11 +447,11 @@ def downcase_char_map(char)
 
     'e' => [
       '   ',
-      'ooo',
+      ' oo',
       'o o',
       'ooo',
       'o  ',
-      'ooo',
+      ' oo',
       '   ',
       '   '
     ],
@@ -459,19 +470,19 @@ def downcase_char_map(char)
     'g' => [
       '   ',
       '   ',
-      '   ',
-      'ooo',
+      ' o ',
       'o o',
-      'ooo',
+      'o o',
+      ' oo',
       '  o',
-      'ooo'
+      'oo '
     ],   
 
     'h' => [
       'o  ',
       'o  ',
-      'o  ',
-      'ooo',
+      'oo ',
+      'o o',
       'o o',
       'o o',
       '   ',
@@ -503,9 +514,9 @@ def downcase_char_map(char)
     'k' => [
       'o  ',
       'o  ',
-      'o  ',
       'o o',
       'oo ',
+      'o o',
       'o o',
       '   ',
       '   '
@@ -525,8 +536,8 @@ def downcase_char_map(char)
     'm' => [
       '     ',
       '     ',
-      '     ',
-      'ooooo',
+      'oo o ',
+      'o o o',
       'o o o',
       'o o o',
       '     ',
@@ -536,8 +547,8 @@ def downcase_char_map(char)
     'n' => [
       '   ',
       '   ',
-      '   ',
-      'ooo',
+      'oo ',
+      'o o',
       'o o',
       'o o',
       '   ',
@@ -546,11 +557,11 @@ def downcase_char_map(char)
 
     'o' => [
       '   ',
-      '   ',
-      '   ',
-      'ooo',
+      ' o ',
       'o o',
-      'ooo',
+      'o o',
+      'o o',
+      ' o ',
       '   ',
       '   '
     ],
@@ -590,11 +601,11 @@ def downcase_char_map(char)
 
     's' => [
       '   ',
-      'ooo',
+      ' oo',
       'o  ',
       'ooo',
       '  o',
-      'ooo',
+      'oo ',
       '   ',
       '   '
     ],
@@ -613,7 +624,7 @@ def downcase_char_map(char)
     'u' => [
       '   ',
       '   ',
-      '   ',
+      'o o',
       'o o',
       'o o',
       'ooo',
@@ -622,14 +633,14 @@ def downcase_char_map(char)
     ],
 
     'v' => [
-      '     ',
-      '     ',
-      '     ',
-      'o   o',
-      ' o o ',
-      '  o  ',
-      '     ',
-      '     '
+      '   ',
+      '   ',
+      'o o',
+      'o o',
+      'o o',
+      ' o ',
+      '   ',
+      '   '
     ],  
 
     'w' => [
@@ -645,10 +656,10 @@ def downcase_char_map(char)
 
     'x' => [
       '   ',
-      '   ',
-      '   ',
+      'o o',
       'o o',
       ' o ',
+      'o o',
       'o o',
       '   ',
       '   '
